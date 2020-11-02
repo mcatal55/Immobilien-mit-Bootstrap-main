@@ -1,11 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sources/css/style.css">
     <title>Immobilien mit Bootstrap</title>
+    <style>
+
+    </style>
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <div class="container" style="font-family: 'Montserrat', sans-serif; width: 1500px;">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">
+                        <img src="/sources/images/immoscout24.svg" width="100" height="50" alt="" loading="lazy">
+                    </a>
+
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Suchen</a>
+                            <div class="dropdown-menu border-0 megamenu">
+                                <div class="row">
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Wohnen</b>
+                                        <a class="dropdown-item mt-3" href="#">Mietwohnung</a>
+                                        <a class="dropdown-item" href="#">Eigentumswohnung</a>
+                                        <a class="dropdown-item" href="#">Haus mieten</a>
+                                        <a class="dropdown-item" href="#">Haus kaufen</a>
+                                        <a class="dropdown-item" href="#">Auslandsimmobilie</a>
+                                        <a class="dropdown-item" href="#">WG-Zimmer</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Neubau</b>
+                                        <a class="dropdown-item mt-3" href="#">Bauprojekte</a>
+                                        <a class="dropdown-item" href="#">Haus bauen</a>
+                                        <a class="dropdown-item" href="#">Hausbau-Kataloge</a>
+                                        <a class="dropdown-item" href="#">Grundstück kaufen</a>
+                                        <a class="dropdown-item" href="#">Häuser nach Preisen</a>
+                                        <a class="dropdown-item" href="#">Kapitalanlagen</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Gewerbe</b>
+                                        <a class="dropdown-item mt-3" href="#">Gewerbeimmobilien suchen</a>
+                                        <a class="dropdown-item" href="#">Büro & Praxis</a>
+                                        <a class="dropdown-item" href="#">Lager & Produktion</a>
+                                        <a class="dropdown-item" href="#">Einzelhandel</a>
+                                        <a class="dropdown-item" href="#">Gastronomieflächen</a>
+                                        <a class="dropdown-item" href="#">Büro auf Zeit</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Services & Ratgeber</b>
+                                        <a class="dropdown-item mt-3" href="#">SCHUFA BonitätsCheck</a>
+                                        <a class="dropdown-item" href="#">Markt & Preise</a>
+                                        <a class="dropdown-item" href="#">Immobilienwert berechen</a>
+                                        <a class="dropdown-item" href="#">Veröffentlichte Profile</a>
+                                        <a class="dropdown-item" href="#">Vorlagen & Downloads</a>
+                                        <a class="dropdown-item" href="#">Kontakt & Hilfe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Verkaufen</a>
+                            <div class="dropdown-menu border-0 megamenu">
+                                <div class="row">
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Jetz loslegen</b>
+                                        <a class="dropdown-item mt-3" href="#">Immobilie bewerten</a>
+                                        <a class="dropdown-item" href="#">Immobilie Inserieren</a>
+                                        <a class="dropdown-item" href="#">Maklerempfehlungen erhalten</a>
+                                        <a class="dropdown-item" href="#">Makler selbst finden</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Für Eigentümer</b>
+                                        <a class="dropdown-item mt-3" href="#">Preisatlas</a>
+                                        <a class="dropdown-item" href="#">Haus verkaufen Leitfaden</a>
+                                        <a class="dropdown-item" href="#">Alle Antworten auf Ihre Fragen</a>
+                                        <a class="dropdown-item" href="#">Neu: Ihr Eigentümerbereich</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Für Immobilien-Profis</b>
+                                        <a class="dropdown-item mt-3" href="#">Produktwelt & Tipps</a>
+                                        <a class="dropdown-item" href="#">Kunde werden</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Vermieten</a>
+                            <div class="dropdown-menu border-0 megamenu">
+                                <div class="row" style="width: 1000px;">
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Jetz loslegen</b>
+                                        <a class="dropdown-item mt-3" href="#">Kostenlos inserieren</a>
+                                        <a class="dropdown-item" href="#">Wohnung vermieten</a>
+                                        <a class="dropdown-item" href="#">Nachmieter finden</a>
+                                        <a class="dropdown-item" href="#">WG-Zimmer vermieten</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Services & Ratgeber</b>
+                                        <a class="dropdown-item mt-3" href="#">Alle Antworten auf Ihre Fragen</a>
+                                        <a class="dropdown-item" href="#">Mietverträge & Vorlagen</a>
+                                        <a class="dropdown-item" href="#">Energieausweis bestellen</a>
+                                        <a class="dropdown-item" href="#">Maklerempfehlungen erhalten</a>
+                                        <a class="dropdown-item" href="#">Kontakt & Hilfe</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Für Immobilien-Profis</b>
+                                        <a class="dropdown-item mt-3" href="#">Produktwelt & Tipps</a>
+                                        <a class="dropdown-item" href="#">Kunde werden</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Finanzieren </a>
+                            <div class="dropdown-menu border-0 megamenu">
+                                <div class="row">
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Immobilie finanzieren</b>
+                                        <a class="dropdown-item mt-3" href="#">Baufinanzierung im Vergleich</a>
+                                        <a class="dropdown-item" href="#">Finanzierungsrechner</a>
+                                        <a class="dropdown-item" href="#">Was kann ich mir leisten?</a>
+                                        <a class="dropdown-item" href="#">FinanzierungsManager</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Ratenkredit prüfen</b>
+                                        <a class="dropdown-item mt-3" href="#">Kreditvergleich</a>
+                                        <a class="dropdown-item" href="#">Wozu einen Ratenkredit?</a>
+                                        <a class="dropdown-item" href="#">Ablaufplan Kredit</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Services & Ratgeber</b>
+                                        <a class="dropdown-item mt-3" href="#">Finanzierung ohne Eigenkapital</a>
+                                        <a class="dropdown-item" href="#">Anschlussfinanzierung berechnen</a>
+                                        <a class="dropdown-item mt-3" href="#">Themenüberblick</a>
+                                        <a class="dropdown-item" href="#">Kontakt & Hilfe</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Für Finanzberater</b>
+                                        <a class="dropdown-item mt-3" href="#">Kunde werden</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false" data-hover="dropdown">Umziehen </a>
+                            <div class="dropdown-menu border-0 megamenu">
+                                <div class="row">
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Dein Umzug</b>
+                                        <a class="dropdown-item mt-3" href="#">Umzug planen</a>
+                                        <a class="dropdown-item" href="#">Mietvertrag kündigen</a>
+                                        <a class="dropdown-item" href="#">Umzugsunternehmen vergleichen</a>
+                                        <a class="dropdown-item" href="#">Umzug Checkliste</a>
+                                        <a class="dropdown-item" href="#">Umzug Deutschland</a>
+                                        <a class="dropdown-item" href="#">Halteverbotszonen bestellen</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Ratgeber</b>
+                                        <a class="dropdown-item mt-3" href="#">Umzug Ratgeber</a>
+                                        <a class="dropdown-item" href="#">Umzugskosten berechnen</a>
+                                        <a class="dropdown-item" href="#">Hartz 4 Umzug</a>
+                                        <a class="dropdown-item" href="#">Vorlagen & Downloads</a>
+                                    </div>
+                                    <div class="col-3" style="font-size: 14px">
+                                        <b class="mx-4">Kontakt & Services</b>
+                                        <a class="dropdown-item mt-3" href="#">Services</a>
+                                        <a class="dropdown-item" href="#">Umzugsunternehmen eintragen</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <button class="btn btn-outline-dark my-2 my-sm-0 btn-sm" type="submit">Anzeige
+                                schalten</button>
+                            <a class="nav-link btn-sm" href="#">
+                                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bell" fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                                </svg>
+                            </a>
+                        </form>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false" data-hover="dropdown">Plus
+                                <span>entdecken</span> </a>
+                            <div class="dropdown-menu border-0 ">
+                                <div class="row">
+                                    <div class="text-center" style="font-size: 14px">
+                                        <span>
+                                            Persönliche Services nutzen und schneller ans Ziel kommen.
+                                        </span>
+                                        <br>
+                                        <button type="button" class="btn btn-sm mt-2"
+                                            style="background-color: #00d9b1; ">Anmelden / Registrieren
+                                        </button>
+
+                                        <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                                    role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                            </li>
+
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact"
+                                                    role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active text-left" id="home" role="tabpanel"
+                                                aria-labelledby="home-tab">
+                                                <a class="dropdown-item mt-3" href="#">Übersicht</a>
+                                                <a class="dropdown-item my-1" href="#">Nachrichten</a>
+                                                <a class="dropdown-item my-1" href="#">Merkzettel</a>
+                                                <a class="dropdown-item my-1" href="#">Gespeicherte Suchen</a>
+                                                <a class="dropdown-item my-1" href="#">Besichtigungskalender</a>
+                                                <a class="dropdown-item my-1" href="#">Profil</a>
+                                                <a class="dropdown-item my-1" href="#">Wohnen</a>
+                                                <a class="dropdown-item my-1" href="#">Kaufen</a>
+                                                <a class="dropdown-item my-1" href="#">Umzug</a>
+                                                <a class="dropdown-item my-1" href="#">Finanzierung</a>
+                                                <a class="dropdown-item my-1" href="#">Einstellungen</a>
+                                                <a class="dropdown-item my-1" href="#">Mitgliedschaft</a>
+                                            </div>
+                                            <div class="tab-pane fade text-left" id="contact" role="tabpanel"
+                                                aria-labelledby="contact-tab">
+                                                <a class="dropdown-item mt-3" href="#">Übersicht</a>
+                                                <a class="dropdown-item my-1" href="#">Nachrichten</a>
+                                                <a class="dropdown-item my-1" href="#">Immobilienanzeigen</a>
+                                                <a class="dropdown-item my-1" href="#">Eigentümerbereich</a>
+                                                <a class="dropdown-item my-1" href="#">Vermieter-Mitgliedschaft</a>
+                                                <a class="dropdown-item my-1" href="#">EigentümerPlus</a>
+                                                <a class="dropdown-item my-1" href="#">Immobilienbewertungen</a>
+                                                <a class="dropdown-item my-1" href="#">Konto verwalten</a>
+                                                <div class="dropdown-divider my-1"></div>
+                                                <a class="dropdown-item my-1" href="#">Kunde werden</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- SLIDER START-->
+    <div class="container-fluid slider">
+        <div>
+            <img src="sources/images/slider.jpg" alt="" width="100%">
+
+            <div>
+                <div class="play-icon-container">
+                    <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-play-fill play-icon"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+
+                    <div class="play-icon-content">
+                        <span>Marktführer</span>
+                        <span>für Besserverkäufer</span>
+                        <a class="text-decoration-none text-white" href="">
+                            Alles zum neuen TV-Spot
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-filter">
+                    <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
+                        <li class="nav-item font-weight-bold" role="presentation">
+                            <a class="nav-link active text-dark" id="home-tab" data-toggle="tab" href="#immobilien"
+                                role="tab" aria-controls="home" aria-selected="true">Immobilien</a>
+                        </li>
+                        <li class="nav-item font-weight-bold" role="presentation">
+                            <a class="nav-link text-dark" id="preisatlas-tab" data-toggle="tab" href="#preisatlas"
+                                role="tab" aria-controls="contact" aria-selected="false">Preisatlas</a>
+                        </li>
+                        <li class="nav-item font-weight-bold" role="presentation">
+                            <a class="nav-link text-dark" id="maklervergleisch-tab" data-toggle="tab"
+                                href="#maklervergleisch" role="tab" aria-controls="contact"
+                                aria-selected="false">Maklervergleich</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content slider-filter-content rounded" id="myTabContent">
+                        <div class="tab-pane fade show active text-left" id="immobilien" role="tabpanel"
+                            aria-labelledby="home-tab">
+
+                            <div class="input-group m-3 filter-input">
+                                <div class="input-group-prepend" id="button-addon3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle border-dark" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Mieten</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Mieten</a>
+                                        <a class="dropdown-item" href="#">Kaufen</a>
+                                        <a class="dropdown-item" href="#">Bauen</a>
+                                    </div>
+                                </div>
+
+                                <input type="text" class="form-control font-weight-bold border-dark"
+                                    placeholder="Wo? Ort, Stadt, Straße, PLZ oder Scout-ID"
+                                    aria-label="Example text with two button addons" aria-describedby="button-addon3">
+
+                                <div class="input-group-prepend mr-3" id="button-addon3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle border-dark" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Wohnung</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Wohnung</a>
+                                        <a class="dropdown-item" href="#">Haus</a>
+                                        <a class="dropdown-item" href="#">Wohnung auf Zeit</a>
+                                        <a class="dropdown-item" href="#">WG Zimmer</a>
+                                        <a class="dropdown-item" href="#">Büros / Praxen</a>
+                                        <a class="dropdown-item" href="#">Hallen / Produktion</a>
+                                        <a class="dropdown-item" href="#">Einzelhandel</a>
+                                        <a class="dropdown-item" href="#">Gastronomie / Hotel</a>
+                                        <a class="dropdown-item" href="#">Spezialgewerbe</a>
+                                        <a class="dropdown-item" href="#">Grundstücke</a>
+                                        <a class="dropdown-item" href="#">Gewerbegrundstücke</a>
+                                        <a class="dropdown-item" href="#">Garage / Stellplätze</a>
+                                        <a class="dropdown-item" href="#">Seniorenwohnen</a>
+                                        <a class="dropdown-item" href="#">Pflefeheime</a>
+                                    </div>
+                                </div>
+                                <a class="btn btn-inline-secondary text-dark font-weight-bold mr-5" href="#"
+                                    style="background-color: #00ffd0; ">Suchen</a>
+                            </div>
+                            <div class="container">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend " id="button-addon3">
+
+                                        <input type="text" class="form-control pr-5 filter-second"
+                                            placeholder="Preis bis" aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+
+                                        <div class="input-group-prepend" id="button-addon3">
+                                            <button
+                                                class="btn btn-outline-secondary dropdown-toggle border-dark filter-second"
+                                                type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Zimmer egal</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">ab 1 Zimmer</a>
+                                                <a class="dropdown-item" href="#">ab 1,5 Zimmer</a>
+                                                <a class="dropdown-item" href="#">ab 2 Zimmer</a>
+                                                <a class="dropdown-item" href="#">ab 2,5 Zimmer</a>
+                                                <a class="dropdown-item" href="#">ab 3 Zimmer</a>
+                                                <a class="dropdown-item" href="#">ab 3,5 Zimmer</a>
+                                                <a class="dropdown-item" href="#">ab 4 Zimmer</a>
+                                                <a class="dropdown-item" href="#">ab 5 Zimmer</a>
+                                            </div>
+                                        </div>
+
+                                        <input type="text" class="form-control pr-5 filter-second"
+                                            placeholder="Fläche ab" aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+
+                                        <div class="input-group-prepend" id="button-addon3">
+                                            <button
+                                                class="btn btn-outline-secondary dropdown-toggle border-dark filter-second"
+                                                type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Umkrise</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">1 Km</a>
+                                                <a class="dropdown-item" href="#">2 Km</a>
+                                                <a class="dropdown-item" href="#">3 Km</a>
+                                                <a class="dropdown-item" href="#">4 Km</a>
+                                                <a class="dropdown-item" href="#">5 Km</a>
+                                                <a class="dropdown-item" href="#">10 Km</a>
+                                                <a class="dropdown-item" href="#">15 Km</a>
+                                                <a class="dropdown-item" href="#">20 Km</a>
+                                                <a class="dropdown-item" href="#">50 Km</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade text-left" id="preisatlas" role="tabpanel"
+                            aria-labelledby="contact-tab">
+                            <div class="tab-pane fade show active text-left" id="immobilien" role="tabpanel"
+                                aria-labelledby="home-tab">
+
+                                <div class="input-group m-3 filter-input">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text border-right-0"
+                                                style="background-color: white; ">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control border-left-0 font-weight-bold"
+                                            id="inlineFormInputGroupUsername"
+                                            placeholder="Adresse eingeben (z.B. Andreasstraße 10, 10243 Berlin)">
+                                        <a class="btn btn-inline-secondary text-dark font-weight-bold mr-5" href="#"
+                                            style="background-color: #00ffd0; ">Suchen</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade text-left" id="maklervergleisch" role="tabpanel"
+                            aria-labelledby="contact-tab">
+
+                            <div class="input-group m-3 filter-input">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text border-right-0" style="background-color: white; ">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control border-left-0 font-weight-bold"
+                                        id="inlineFormInputGroupUsername" placeholder="PLZ Ihrer Immobilie">
+                                    <a class="btn btn-inline-secondary text-dark font-weight-bold mr-5" href="#"
+                                        style="background-color: #00ffd0; ">Suchen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SLIDER END-->
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="sources/js/custom.js"></script>
+    <script>
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,116 @@
+.navbar{ 
+    width: 1300px;
+    padding-top: 0; 
+    padding-bottom: 0; 
+
+}
+.navbar .has-megamenu{position:static!important;}
+.navbar .megamenu{left:0; right:0; top:-100; width:100%; padding:20px;  }
+
+.nav-link:hover{
+    border-bottom: 5px solid #00d9b1;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+  }
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+  }
+   
+  .dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+  }
+   
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+  }
+
+  #home-tab, #contact-tab {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .nav-tabs .nav-item {
+    margin-right: 0!important;
+  }
+
+  .nav-tabs .nav-item:hover {
+    border-bottom: 5px solid #00d9b1;
+  }
+
+  .tab-content .dropdown-item:hover {
+    border-bottom: 2px solid black;
+  }
+
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .play-icon-container {
+    position: absolute;
+    top: 10%;
+    left:48%;
+    z-index: 2;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .play-icon {
+    padding: 0.5rem;
+  }
+
+  .play-icon-content {
+    padding-top: 0px;
+    font-size: 30px;
+    position: absolute;
+    top: 110%;
+    left:-100%;
+    color: white;
+    font-weight: 500;
+    border-radius: 50%;
+  }
+
+  .play-icon-content span {
+
+  }
+
+.play-icon-content a {
+  
+  font-size: 20px;
+}
+
+.slider-filter {
+  position: absolute;
+    top: 350px;
+    left:650px;
+
+    background-color: white;
+}
+
+
+.slider-filter-content {
+  position: absolute;
+  left: -200px;
+  background-color: white;
+  width: 900px;
+  
+}
+
+.filter-input .dropdown-item {
+  font-size: 14px;
+}
+
+
+.btn-inline-secondary:hover {
+  color: #fff;
+  background-color: #00d9b1!important;
+}
+
+.filter-second {
+  width: 213px;
+  border: none;
+  border-bottom: 1px dashed rgb(202, 202, 202)!important ;
+}
