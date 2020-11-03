@@ -72,11 +72,7 @@
     font-weight: 500;
     border-radius: 50%;
   }
-
-  .play-icon-content span {
-
-  }
-
+  
 .play-icon-content a {
   
   font-size: 20px;
@@ -114,3 +110,61 @@
   border: none;
   border-bottom: 1px dashed rgb(202, 202, 202)!important ;
 }
+
+
+/* inspiration */
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item>div {
+      display: none;
+  }
+
+  .carousel-inner .carousel-item>div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+
+.card-body {
+  padding-left: 3px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-left: 0px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card-foot {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* inspiration */
