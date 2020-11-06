@@ -43,6 +43,7 @@
 
 .nav-tabs .nav-item {
   margin-right: 0!important;
+  padding-left: 10px;
 }
 
 .nav-tabs .nav-link {
@@ -134,8 +135,6 @@
   display: flex;
 }
 
-/* display 3 */
-
 .carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next {
   transform: translateX(25%);
 }
@@ -158,10 +157,6 @@
   margin-bottom: 8px;
   margin-left: 0px;
 }
-
-/* #recipeCarousel3 .card-title {
-  font-size: 12px;
-} */
 
 .card-text {
   font-size: 14px;
@@ -190,4 +185,24 @@
 .footer-1 a {
   color: gray;
   margin: 5px 0px;
+}
+
+@media (max-width: 768px) {
+  .slider-filter {
+    position: relative;
+    top: 10px;
+    left: 0px;
+    background-color: white;
+  }
+  .slider-filter-content {
+    position: static;
+    background-color: white;
+  }
+  .filter-second {
+    width: 120px!important;
+  }
+  .filter-content-preis {
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
 }

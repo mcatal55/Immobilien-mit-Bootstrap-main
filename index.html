@@ -210,7 +210,7 @@
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                 aria-haspopup="true" aria-expanded="false" data-hover="dropdown">Plus
                                 <span>entdecken</span> </a>
-                            <div class="dropdown-menu border-0 ">
+                            <div class="dropdown-menu border-0" style="width: 280px; padding:10px">
                                 <div class="row">
                                     <div class="text-center" style="font-size: 14px">
                                         <span>
@@ -234,7 +234,7 @@
                                         </ul>
                                         <div class="tab-content" id="myTabContent">
                                             <div class="tab-pane fade show active text-left" id="home" role="tabpanel"
-                                                aria-labelledby="home-tab">
+                                                aria-labelledby="home-tab" style="padding-left: 10px;">
                                                 <a class="dropdown-item mt-3" href="#">Übersicht</a>
                                                 <a class="dropdown-item my-1" href="#">Nachrichten</a>
                                                 <a class="dropdown-item my-1" href="#">Merkzettel</a>
@@ -249,7 +249,7 @@
                                                 <a class="dropdown-item my-1" href="#">Mitgliedschaft</a>
                                             </div>
                                             <div class="tab-pane fade text-left" id="contact" role="tabpanel"
-                                                aria-labelledby="contact-tab">
+                                                aria-labelledby="contact-tab" style="padding-left: 10px;">
                                                 <a class="dropdown-item mt-3" href="#">Übersicht</a>
                                                 <a class="dropdown-item my-1" href="#">Nachrichten</a>
                                                 <a class="dropdown-item my-1" href="#">Immobilienanzeigen</a>
@@ -277,7 +277,7 @@
         <div>
             <img src="sources/images/slider.jpg" alt="" width="100%">
 
-            <div>
+            <div class="container">
                 <div class="play-icon-container">
                     <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-play-fill play-icon"
                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -288,9 +288,6 @@
                     <div class="play-icon-content">
                         <span>Marktführer</span>
                         <span>für Besserverkäufer</span>
-                        <a class="text-decoration-none text-white" href="">
-                            Alles zum neuen TV-Spot
-                        </a>
                     </div>
                 </div>
                 <div class="slider-filter rounded pl-3 pr-3">
@@ -325,7 +322,7 @@
                                     </div>
                                 </div>
 
-                                <input type="text" class="form-control font-weight-bold border-dark"
+                                <input type="text" id="filter-place" class="form-control font-weight-bold border-dark"
                                     placeholder="Wo? Ort, Stadt, Straße, PLZ oder Scout-ID"
                                     aria-label="Example text with two button addons" aria-describedby="button-addon3">
 
@@ -353,7 +350,7 @@
                                 <a class="btn btn-inline-secondary text-dark font-weight-bold mr-5" href="#"
                                     style="background-color: #00ffd0; ">Suchen</a>
                             </div>
-                            <div class="container">
+                            <div class="container filter-content-preis">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend " id="button-addon3">
 
